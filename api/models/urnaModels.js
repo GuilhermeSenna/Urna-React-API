@@ -9,8 +9,8 @@ const CandidatesSchema = new Schema({
     required: "Enter candidate's name ",
   },
   NumCandidate: {
-    Type: Number,
-    min: 18,
+    type: Number,
+    unique: true
   },
   status: {
     type: [
@@ -20,6 +20,9 @@ const CandidatesSchema = new Schema({
       },
     ],
     default: ["pending"],
+  },
+  teste: {
+    type: String,
   },
 });
 

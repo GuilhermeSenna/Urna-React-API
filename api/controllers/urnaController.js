@@ -11,6 +11,7 @@ exports.list_all_candidates = (req, res) => {
 };
 
 exports.create_a_candidate = (req, res) => {
+  console.log(req.body)
   let new_candidate = new Candidate(req.body);
   new_candidate.save((err, candidate) => {
     if (err) res.send(err);
