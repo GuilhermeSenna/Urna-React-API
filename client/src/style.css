@@ -1,9 +1,21 @@
 .App h1 {
+  font-size: 600%;
   color: white;
 }
 
 .App h2 {
+  font-size: 300%;
   color: lightgray;
+}
+
+.App h3 {
+  font-size: 300%;
+  color: lightyellow;
+}
+
+.candidato{
+  border: 5px solid black;
+  margin: 20px 0;
 }
 
 body {

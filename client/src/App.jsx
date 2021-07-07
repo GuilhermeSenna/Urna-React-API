@@ -21,8 +21,9 @@ export default function App() {
       <h2> Nenhum candidato cadastrado ainda...</h2>
       {candidatos.map((val, key) => {
         return (
-          <div className="Post" key={key}>
-            <h5>Likes: {val.name}</h5>
+          <div className="candidato" key={key}>
+            <h3><bold>Nome:</bold> {val.name}</h3>
+            <h3><bold>Número do candidato:</bold> {val.NumCandidate}</h3>
           </div>
         )
       })}
