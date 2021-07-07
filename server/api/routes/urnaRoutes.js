@@ -3,7 +3,7 @@
 module.exports = (app) => {
   const CandidatesList = require("../controllers/urnaController");
 
-  //rotas
+  // rotas
   app
     .route("/candidates")
     .get(CandidatesList.list_all_candidates)

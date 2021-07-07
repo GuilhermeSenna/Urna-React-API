@@ -1,6 +1,7 @@
 const express = require("express"),
   app = express(),
-  port = process.env.PORT || 3000;
+  port = process.env.PORT || 3002;
+const cors = require('cors') // Middleware
 mongoose = require("mongoose");
 const uri = "mongodb://localhost/bd_teste";
 Candidate = require("./models/urnaModels"); // model loading here
@@ -19,7 +20,10 @@ mongoose
   .catch((err) => {
     console.log(Error, err.message);
   });
+
 app.use(express.urlencoded({ extended: true }));
+// Enable CORS
+app.use(cors());
 app.use(express.json());
 
 const routes = require("./routes/urnaRoutes"); // importing routes
