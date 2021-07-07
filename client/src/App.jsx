@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>Lista de candidatos</h1>
-      <h2> Nenhum candidato cadastrado ainda...</h2>
+      {/* <h2> Nenhum candidato cadastrado ainda...</h2> */}
       {candidatos.map((val, key) => {
         return (
           <div className="candidato" key={key}>
