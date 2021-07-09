@@ -21,3 +21,20 @@
 body {
   background-color: #3e3f4c;
 }
+
+input[type=text]{
+  margin-left: 20px; 
+  height: 50px; 
+  width: 50%;
+  font-size: 60px;
+}
+
+input[type=submit]{
+  width: 200px;
+  height: 60px;
+  font-size: x-large;
+  font-weight: bold;
+  border: 1px solid black;
+  /* background-color: black;
+  color: white; */
+}

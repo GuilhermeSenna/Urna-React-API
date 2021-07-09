@@ -7,7 +7,7 @@ export default function App() {
   const [candidatos, setCandidatos] = useState([]);
 
   const getData = async () => {
-    const res = await Axios.get('http://localhost:3002/candidates')
+    const res = await Axios.get('http://localhost:3002/candidates');
     setCandidatos(res.data)
   }
 
@@ -22,8 +22,8 @@ export default function App() {
       {candidatos.map((val, key) => {
         return (
           <div className="candidato" key={key}>
-            <h3><bold>Nome:</bold> {val.name}</h3>
-            <h3><bold>Número do candidato:</bold> {val.NumCandidate}</h3>
+            <h3><strong>Nome:</strong> {val.nome}</h3>
+            <h3><strong>Número do candidato:</strong> {val.numero}</h3>
           </div>
         )
       })}
