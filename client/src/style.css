@@ -1,21 +1,32 @@
+.candidatos{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .App h1 {
-  font-size: 600%;
+  font-size: 300%;
   color: white;
 }
 
-.App h2 {
+.candidatos h2 {
   font-size: 300%;
   color: lightgray;
 }
 
-.App h3 {
-  font-size: 300%;
+.candidatos h3 {
+  display: block;
+  font-size: 200%;
   color: lightyellow;
 }
 
 .candidato{
   border: 5px solid black;
-  margin: 20px 0;
+  border-radius: 10px;
+  margin: 20px;
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 body {

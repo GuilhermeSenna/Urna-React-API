@@ -18,15 +18,17 @@ export default function App() {
   return (
     <div className="App">
       <h1>Lista de candidatos</h1>
-      {/* <h2> Nenhum candidato cadastrado ainda...</h2> */}
-      {candidatos.map((val, key) => {
-        return (
-          <div className="candidato" key={key}>
-            <h3><strong>Nome:</strong> {val.nome}</h3>
-            <h3><strong>Número do candidato:</strong> {val.numero}</h3>
-          </div>
-        )
-      })}
+      <div className="candidatos">
+        {/* <h2> Nenhum candidato cadastrado ainda...</h2> */}
+        {candidatos.map((val, key) => {
+          return (
+            <div className="candidato" key={key}>
+              <h3><strong>Nome:</strong> {val.nome}</h3>
+              <h3><strong>Número do candidato:</strong> {val.numero}</h3>
+            </div>
+          )
+        })}
+      </div>
     </div>
   );
 }

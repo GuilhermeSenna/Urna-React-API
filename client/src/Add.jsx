@@ -7,9 +7,10 @@ import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   add: {
-    position: "absolute",
-    right: 10,
-    bottom: 10
+    display: "flex",
+    position: "fixed",
+    right: "20px",
+    bottom: "20px"
   }
 }));
 
