@@ -1,12 +1,13 @@
 import React from "react";
+import "./style.css";
 
 export default function Footer() {
   return (
-    <div>
+    <div className="Footer">
       <ul>
-        <li>Não oficial</li>
-        <li>Candidatos vencedores vão ser divulgados</li>
-        <li>As votações são seguras.</li>
+        <li>1. Não oficial</li>
+        <li>2. Candidatos vencedores vão ser divulgados</li>
+        <li>3. As votações são seguras.</li>
       </ul>
     </div>
   );

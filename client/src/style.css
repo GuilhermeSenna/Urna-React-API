@@ -49,3 +49,18 @@ input[type=submit]{
   /* background-color: black;
   color: white; */
 }
+
+.Footer{
+  padding: 10px 0;
+  background-color: #30313b;
+  margin-top: 15%;
+  margin-bottom: 0;
+}
+
+
+.Footer li{
+  display:table;
+  margin:0px auto 0px auto;
+  color: white;
+  font-size: 200%;
+}
