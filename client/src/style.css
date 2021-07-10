@@ -1,3 +1,27 @@
+/* Geral */
+
+body {
+  background-color: #3e3f4c;
+}
+
+
+.Footer{
+  padding: 10px 0;
+  background-color: #30313b;
+  margin-top: 15%;
+  margin-bottom: 0;
+}
+
+
+.Footer li{
+  display:table;
+  margin:0px auto 0px auto;
+  color: white;
+  font-size: 200%;
+}
+
+/* Pagina principal */
+
 .candidatos{
   display: flex;
   flex-wrap: wrap;
@@ -29,8 +53,18 @@
   flex-direction: column;
 }
 
-body {
-  background-color: #3e3f4c;
+
+/* Form */
+
+.Form h1{
+  color:aliceblue;
+  font-size: 300%;
+  font-weight: 900;
+}
+
+label{
+  font-size: 3rem;
+  color: white;
 }
 
 input[type=text]{
@@ -48,19 +82,4 @@ input[type=submit]{
   border: 1px solid black;
   /* background-color: black;
   color: white; */
-}
-
-.Footer{
-  padding: 10px 0;
-  background-color: #30313b;
-  margin-top: 15%;
-  margin-bottom: 0;
-}
-
-
-.Footer li{
-  display:table;
-  margin:0px auto 0px auto;
-  color: white;
-  font-size: 200%;
 }

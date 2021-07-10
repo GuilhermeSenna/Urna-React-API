@@ -8,6 +8,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Add from "./Add";
 import Form from "./Form";
+import Candidato from "./Candidato"
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
@@ -19,7 +20,7 @@ ReactDOM.render(
           <App />
           <Add />
         </Route>
-
+        <Route path="/candidato/:candidatoID" component={Candidato} /> {/* Página do candidato */}
         {/* Só aparece na tela inicial */}
         <Route path="/add" component={Form} /> {/* Só aparece na página /add */}
       </Switch>
