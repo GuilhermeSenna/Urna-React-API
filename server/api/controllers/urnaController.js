@@ -23,7 +23,7 @@ exports.update_a_candidate = (req, res) => {
     { _id: req.params.candidatesId },
     req.body,
     { new: true },
-    (err, task) => {
+    (err, candidate) => {
       if (err) res.send(err);
       res.json(candidate);
     }

@@ -53,6 +53,12 @@ body {
   flex-direction: column;
 }
 
+/* Página do candidato */
+
+.candidatoesp h1, h2{
+  color: white;
+}
+
 
 /* Form */
 
