@@ -3,8 +3,10 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import Axios from 'axios'
 import "./style.css";
+import { useHistory } from 'react-router-dom'
 
-export default function Add() {
+export default function Add(props) {
+  let history = useHistory(); // http://localhost:3000
 
   const [nome, setNome] = useState('');
   const [numero, setNumero] = useState('');
@@ -25,6 +27,11 @@ export default function Add() {
           console.log('Erro, tente novamente com outro número de candidato')
         } else {
           console.log('Inserido com sucesso!');
+          props.history.push({
+            pathname: '/',
+            search: '?query=abc',
+            state: { tipo: 'con', candidato }
+          });
         }
       }, (error) => {
         console.log(error);

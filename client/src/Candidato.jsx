@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom"
 import Axios from 'axios'
 import "./style.css";
 
-export default function Candidato() {
+export default function Candidato(props) {
     let { candidatoID } = useParams();
     const [candidato, setCandidato] = useState({});
     const [remover, setRemover] = useState(false);
@@ -30,7 +30,11 @@ export default function Candidato() {
 
     const deletePost = (id) => {
         Axios.delete(`http://localhost:3002/candidates/${candidatoID}`).then((response) => {
-            alert("Você removeu um candidato")
+            props.history.push({
+                pathname: '/',
+                search: '?query=abc',
+                state: { tipo: 'del', candidato }
+            });
         })
     }
 

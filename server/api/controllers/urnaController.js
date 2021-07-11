@@ -16,8 +16,10 @@ exports.create_a_candidate = (req, res) => {
   new_candidate.save((err, candidate) => {
     if (err) res.send(err);
     res.json(candidate);
+    // res.redirect('http://localhost:3000/');
   });
 };
+
 exports.update_a_candidate = (req, res) => {
   Candidate.findOneAndUpdate(
     { _id: req.params.candidatesId },
