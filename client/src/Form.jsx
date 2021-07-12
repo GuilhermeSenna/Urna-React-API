@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
+//import TextField from "@material-ui/core/TextField";
+//import Button from "@material-ui/core/Button";
 import Axios from 'axios'
 import "./style.css";
-import { useHistory } from 'react-router-dom'
+//import { useHistory } from 'react-router-dom'
 
 export default function Add(props) {
-  let history = useHistory(); // http://localhost:3000
+ // let history = useHistory(); // http://localhost:3000
 
   const [nome, setNome] = useState('');
   const [numero, setNumero] = useState('');
@@ -59,10 +59,7 @@ export default function Add(props) {
 
         <br /><br /><input type="submit" value="Enviar" />
 
-        {/* você pode alternar a cor entre algumas opções,
-         essa foi a que mais se destaca.
-         Podemos reaproveitar. Enquanto não fazemos o crud irei deixar esse
-         botão sem ação. */}
+  
       </form>
     </div >
   );
