@@ -53,7 +53,7 @@ export default function App(props) {
             return (
               <div className="candidato" key={key} onClick={() => (history.push(`/candidato/${val._id}`))}>
                 <h3><strong>Nome:</strong> {val.nome}</h3>
-                <h3><strong>Número do candidato:</strong> {val.numero}</h3>
+                <h3><strong>Número:</strong> {val.numero}</h3>
               </div>
             )
           })}
